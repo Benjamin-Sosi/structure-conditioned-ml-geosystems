@@ -12,3 +12,4 @@ def construct_features(df):
     df["connectivity_index"] = df["fracture_intensity"] / (df["resistivity"] + 1e-6)
     
     return df[["connectivity_index"]], df["hydraulic_response"]
+
